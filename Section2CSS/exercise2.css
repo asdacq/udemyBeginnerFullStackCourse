@@ -1,0 +1,32 @@
+ul  li{
+    color:green;
+}
+
+ul > li{
+    color:red;
+}
+
+/* 11 points */
+.parent h2{
+    color:blue;
+}
+/* 12 points & also specifies */
+.parent div h2{
+    color:brown;
+}
+
+h1, h3, h4, p{
+    color : darkorchid;
+}
+
+/* 
+** Lowest on the cascade sheet is
+** chosen for the color
+*/
+h3{
+    color:black;
+}
+
+body{
+    font-family: cursive;
+}

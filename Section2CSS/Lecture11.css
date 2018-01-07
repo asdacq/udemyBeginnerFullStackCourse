@@ -1,0 +1,20 @@
+body{
+    background-color: #494949;
+}
+
+h1 {
+    color: white;
+    text-align: center
+}
+
+.squareClass{
+    width: 100px;
+    height: 100px;
+    background-color: aliceblue;
+    margin: auto;
+}
+
+#circle{
+    color: aqua;
+    font-size: 30px;
+}

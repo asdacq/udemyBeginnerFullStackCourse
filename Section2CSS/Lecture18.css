@@ -1,0 +1,57 @@
+body{
+    background-image: url("images/zebra.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+/*
+    background: linear-gradient(#00ccff, #b3f0ff);
+    box-shadow: 2px 5px 2px black;
+*/    
+}
+
+.container h1{
+    color: red;
+}
+
+div h1{
+    color: green;
+}
+
+/*
+** div + h1 = value of 2 which is 
+** higher than normal h1 (1)
+*/
+div h1{
+    color:blue;
+}
+
+/*
+** With declarations of equal value
+** The one that comes last is applied
+*/
+
+h1, h2, h3, .notARealClass, #someID{
+    color: #ffffff;
+    text-shadow: 2px 2px 5px black;
+    font-family: sans-serif;
+    line-height: 1rem;
+}
+
+
+.borderImg{
+    border: 10px dashed purple;
+}
+
+/*
+** Working with decendents
+*/
+
+ul li {
+    color: white;
+    font-size: 20px;
+}
+
+ul > li {
+    color:yellow;
+}
