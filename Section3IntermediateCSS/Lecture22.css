@@ -1,0 +1,88 @@
+body{
+    background-color: #696969;
+}
+.container{
+/*
+    background: linear-gradient(#00ccff, #b3f0ff);
+    box-shadow: 2px 5px 2px black;
+*/    
+}
+
+.container h1{
+    color: red;
+}
+
+div h1{
+    color: green;
+}
+
+/*
+** div + h1 = value of 2 which is 
+** higher than normal h1 (1)
+*/
+div h1{
+    color:blue;
+}
+
+h1{
+    color: #ffffff;
+    line-height: 2rem;
+    font-family: "Alegreya", serif, sans-serif;
+}
+
+h2{
+    color: #ffffff;
+    line-height: 2rem;
+    font-family: "Open Sans", serif, sans-serif;
+}
+
+h3{
+    color: #ffffff;
+    line-height: 2rem;
+    font-family: "Roboto Slab", serif, sans-serif;
+}
+
+
+.format{
+    font-size: 25px;
+    line-height: 2em;
+    color: white;
+}
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: yellow;
+    letter-spacing: 5px;
+    word-spacing: 30px;
+    text-transform: uppercase;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    padding: 5px;
+    opacity: .8;
+    display: block;
+    margin: auto;
+}
+
+.borderImg{
+    border-radius: 15px;
+    width: 500px;
+    height: 500px;
+    border: 2px solid #ddd;
+    padding: 5px;
+}
+
+/*
+** Working with decendents
+*/
+
+ul li {
+    color: white;
+    font-size: 20px;
+}
+
+ul > li {
+    color:yellow;
+}
