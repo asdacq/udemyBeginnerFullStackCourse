@@ -1,0 +1,364 @@
+/*** Defaults ***/
+nav, header, footer{
+    display: block;
+}
+
+body{
+    line-height: 1em;
+    /*  No extra space   */
+    margin: 0;
+    background: #696969;
+}
+
+label{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+p{
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+article p{
+    font-size: 30px;
+    padding: 20px;
+}
+
+
+html{
+    font-family: 'Inconsolata', monospace, sans-serif, serif;
+}
+/*** Nav bar ***/
+
+nav{
+    width: 100%;
+    /*  No extra space   */
+    margin: 0;   
+}
+
+nav ul{
+    background-color: #eee;
+/**
+*** When browser is collapse,
+*** the content is then 
+*** hidden (mobile devices)  
+*/
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+ul.topnav li{
+    list-style: none;
+    float: left;
+}
+
+ul.topnav li.topnav-right{
+    float: right;
+}
+
+ul.topnav li a{
+    display: block;
+    text-decoration: none;
+    /*** Size of font ***/
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: black;
+}
+
+ul.topnav li a:hover{
+    background-color: skyblue;
+    color: white;
+}
+
+ul.topnav li.dropdownIcon{
+    display: none;
+    
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+/** Custom Styles **/
+
+#gradientSection{
+    /* No linear gradient support */
+    background: #A9A9A9;
+    /* linear gradient for chrome */
+    background: -webkit-linear-gradient(#808080,#A9A9A9);
+    /* linear gradient for opera */
+    background: -o-linear-gradient(#808080,#A9A9A9);
+    /* linear gradient for mozilla */
+    background: -moz-linear-gradient(#808080,#A9A9A9);
+    /* standard syntax */
+    background: linear-gradient(#808080,#A9A9A9);
+}
+
+div.box{
+    margin: 24px;
+    padding: 36px 24px 40px 24px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 
+        0 /* H  */ 
+        0 /* V  */
+        0 /* Blur  */
+        1px /* Spread  */
+        /* Color  */
+        rgba(0 /* Shadow  */,
+            0 /* BG color  */,
+            0 /* Box Color  */,
+            .15 /* Opacity  */),
+        
+        /* Multiple Shadows  */
+        
+        0 /* H  */ 
+        2px /* V  */
+        3px /* Blur  */
+        0 /* Spread  */
+        rgba(0 /* Shadow  */,
+            0 /* BG color  */,
+            0 /* Box Color  */,
+            .1 /* Opacity  */);
+    text-align: center;
+}
+
+button{
+    font-size: 32px;
+    font-weight: 700;
+    color: ghostwhite;
+    background: #A9A9A9;
+    padding: 15px 30px;
+    display: block;
+    text-align: center;
+    margin: 5px;
+    border-radius: 7px;
+}
+
+button.learnMore{
+    display: block;
+    margin: auto;
+}
+
+div.icon{
+    width: 100%;
+    
+}
+
+img.smallerImage{
+    width: 75px;
+    height: 75px;
+}
+
+img.biggerImage{
+    width: 350px;
+    height: 350px;
+}
+
+div.centerImage img{
+    display: block;
+    margin: auto;
+    box-shadow: -2px -2px 20px 2px rgba(0,0,0,.15),
+                2px  2px 17px 2px rgba(0, 0, 0, .1);
+    background-color: whitesmoke;
+    border-radius: 7px;
+    
+}
+
+div.alignTextDown{
+    padding-top: 15px;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.row::after {
+    display: table;
+    clear:both;
+    content: "";
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;} 
+
+*{
+    box-sizing: border-box;
+}
+
+h1.largerText{
+    color:white;
+    font-size: 56px;
+    margin: 0;
+    line-height: 70px;
+}
+
+h1.middleHeader{
+    font-size: 60px;
+    text-align: center;
+    color: white;
+}
+
+input[type = "text"]{
+    font-size: 20px;
+    width: 400px;
+    min-width: 100px;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+form h2{
+    color: white;
+}
+
+div.leftsideCol{
+    margin-left: 30%;
+}
+
+div.rightsideCol{
+    margin-left: 15%;
+}
+
+footer.footStyle{
+    background-color: #D3D3D3;
+    padding-left: 10%;
+}
+
+footer.footStyle h1{
+    font-size: 30px;
+}
+
+footer.footStyle ul{
+    list-style: none;
+    text-align: left;
+    padding-left: 0;
+}
+
+footer.footStyle ul li{
+    font-size: 18px;
+    line-height: 1.5;
+}
+/** Mobile Styles **/
+
+/** 
+*** nth-child(1) says that
+*** all the display will 
+*** have display:none
+*** expect the first child (Home)
+***/
+@media screen and (max-width: 1024px){
+    
+    ul.topnav li:not(:nth-child(1)){
+        display: none;
+    }
+    ul.topnav li.dropdownIcon{
+        display : block;
+        float: right;
+    }
+    
+    ul.topnav.responsive li.dropdownIcon{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    /** 
+    *** Makes sure navbar
+    *** doesn't shift when clicked
+    **/
+    ul.topnav.responsive{
+        position: relative;
+    }
+    
+    /** 
+    *** Places the items
+    *** as a block
+    **/
+    ul.topnav.responsive li{
+        display: inline;
+        float: none;
+    }
+
+    ul.topnav.responsive li a{
+        display: block;
+        text-align: left;
+    }
+    
+    h1.middleHeader{
+        font-size: 50px;
+    }
+    
+    .col-6, .col-4, .col-7, .col-5{
+        width: 100%;
+        margin: 0;
+    }
+    
+    div.mobileStack{
+        width: 50%;
+        display: block;
+    }
+    
+    div.box{
+        padding: 5px;
+        display: block;
+    }
+    
+    div.centerImage{
+        margin: 10px;
+    }
+    
+    div.centerImage img{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+    
+    /** 
+    *** Override margin of  
+    *** the content inside 
+    *** these classes
+    **/
+    div.leftsideCol, div.rightsideCol{
+        margin: 15px;
+    }
+
+    input[type = "text"]{
+        width: 300px;
+    }
+    
+    /** 
+    *** Stretch the video 
+    *** and makes sure it
+    *** doesn't change position
+    **/
+    .videoContainer iframe{
+        position: relative;
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+    }
+    
+    article p{
+    font-size: 25px;
+    }
+}
