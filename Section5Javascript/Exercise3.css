@@ -1,0 +1,30 @@
+div h3{
+    text-align: center;
+    color: whitesmoke;
+    font-family: cursive;
+}
+
+div.box{
+    display: block;
+    border: 2px solid;
+    background-color: #696969;
+    margin: auto;
+    width: 75%;
+    height: 500px;
+    box-shadow: 5px 5px black;
+    border-radius: 8px;
+}
+
+div select{
+    display: block;
+    margin: 0 auto;
+}
+div form{
+    text-align: center;
+    display: block;
+}
+
+input{
+    width:100px;
+}
+
