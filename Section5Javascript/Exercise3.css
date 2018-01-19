@@ -26,5 +26,10 @@ div form{
 
 input{
     width:100px;
+    margin: 10px;
+}
+
+div.center{
+    text-align: center;
 }
 
