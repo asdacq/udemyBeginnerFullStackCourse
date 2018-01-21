@@ -266,7 +266,7 @@ footer.footStyle ul li{
 *** have display:none
 *** expect the first child (Home)
 ***/
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1350px){
     
     ul.topnav li:not(:nth-child(1)){
         display: none;

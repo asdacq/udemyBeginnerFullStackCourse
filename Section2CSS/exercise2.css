@@ -1,7 +1,9 @@
 ul  li{
     color:green;
 }
-
+/*
+** Direct decendents of list is red
+*/
 ul > li{
     color:red;
 }
@@ -12,15 +14,16 @@ ul > li{
 }
 /* 12 points & also specifies */
 .parent div h2{
-    color:brown;
+    color:skyblue;
 }
 
+/* Any color */
 h1, h3, h4, p{
     color : darkorchid;
 }
 
 /* 
-** Lowest on the cascade sheet is
+** Lowest on the cascade is
 ** chosen for the color
 */
 h3{
